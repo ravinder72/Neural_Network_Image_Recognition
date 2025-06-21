@@ -830,7 +830,7 @@ class Model:
 
 if '__main__' == __name__:
     # Label index to label name relation
-    fashion_mnist_labels = {
+    fashion_labels = {
         0: 'T-shirt/top',
         1: 'Trouser',
         2: 'Pullover',
@@ -865,6 +865,6 @@ if '__main__' == __name__:
     predictions = model.output_layer_activation.predictions(confidences)
 
     # Get label name from label index
-    prediction = fashion_mnist_labels[predictions[0]]
+    prediction = fashion_labels[predictions[0]]
 
     print(prediction)
